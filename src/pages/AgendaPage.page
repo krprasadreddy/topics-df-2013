@@ -1,0 +1,225 @@
+<apex:page showHeader="false">
+    <apex:includeScript value="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.js" />
+    <apex:includeScript value="{!$Resource.jqcloud_1_0_4_min_js}" />
+    <apex:stylesheet value="{!$Resource.jqcloud_css}" />
+    
+    <apex:outputPanel id="wordCloud" layout="block" />
+    
+    <script type="text/javascript" >
+        $(document).ready(function() {
+            $('[id="{!$Component.wordCloud}"]').jQCloud(
+            [
+    {
+        "weight": 35,
+        "text": "Chatter Topics",
+        "link": {
+            "target": "_top",
+            "href": "/0TOb00000008RyMGAU"
+        },
+        "html": {
+            "title": "Correct Topic for Salesforce training"
+        }
+    },
+    {
+        "weight": 50,
+        "text": "With Apex",
+        "link": {
+            "target": "_top",
+            "href": "/0TOb00000008RyMGAU"
+        },
+        "html": {
+            "title": "Correct Topic for Salesforce training"
+        }
+    },
+    {
+        "weight": 50,
+        "text": "Topics",
+        "link": {
+            "target": "_top",
+            "href": "/0TOb00000008RyMGAU"
+        },
+        "html": {
+            "title": "Correct Topic for Salesforce training"
+        }
+    },
+    {
+        "weight": 50,
+        "text": "Extending",
+        "link": {
+            "target": "_top",
+            "href": "/0TOb00000008RyMGAU"
+        },
+        "html": {
+            "title": "Correct Topic for Salesforce training"
+        }
+    },
+    {
+        "weight": 35,
+        "text": "Apex",
+        "link": {
+            "target": "_top",
+            "href": "/0TOb00000008RyMGAU"
+        },
+        "html": {
+            "title": "Correct Topic for Salesforce training"
+        }
+    },
+    {
+        "weight": 20,
+        "text": "Subjects",
+        "link": {
+            "target": "_top",
+            "href": "/0TOb00000008RySGAU"
+        },
+        "html": {
+            "title": null
+        }
+    },
+    {
+        "weight": 5,
+        "text": "Subject Matter",
+        "link": {
+            "target": "_top",
+            "href": "/0TOb00000008RyUGAU"
+        },
+        "html": {
+            "title": null
+        }
+    },
+    {
+        "weight": 20,
+        "text": "Theme",
+        "link": {
+            "target": "_top",
+            "href": "/0TOb00000008RyXGAU"
+        },
+        "html": {
+            "title": null
+        }
+    },
+    {
+        "weight": 20,
+        "text": "Issue",
+        "link": {
+            "target": "_top",
+            "href": "/0TOb00000008RyYGAU"
+        },
+        "html": {
+            "title": null
+        }
+    },
+    {
+        "weight": 15,
+        "text": "Matter",
+        "link": {
+            "target": "_top",
+            "href": "/0TOb00000008RycGAE"
+        },
+        "html": {
+            "title": null
+        }
+    },
+    {
+        "weight": 15,
+        "text": "Point",
+        "link": {
+            "target": "_top",
+            "href": "/0TOb00000008RydGAE"
+        },
+        "html": {
+            "title": null
+        }
+    },
+    {
+        "weight": 15,
+        "text": "Concern",
+        "link": {
+            "target": "_top",
+            "href": "/0TOb00000008RyeGAE"
+        },
+        "html": {
+            "title": null
+        }
+    },
+    {
+        "weight": 10,
+        "text": "Argument",
+        "link": {
+            "target": "_top",
+            "href": "/0TOb00000008RyfGAE"
+        },
+        "html": {
+            "title": null
+        }
+    },
+    {
+        "weight": 10,
+        "text": "Thesis",
+        "link": {
+            "target": "_top",
+            "href": "/0TOb00000008ScNGAU"
+        },
+        "html": {
+            "title": null
+        }
+    },
+    {
+        "weight": 10,
+        "text": "Concept",
+        "link": {
+            "target": "_top",
+            "href": "/0TOb00000008ScNGAU"
+        },
+        "html": {
+            "title": null
+        }
+    },
+    {
+        "weight": 5,
+        "text": "Area",
+        "link": {
+            "target": "_top",
+            "href": "/0TOb00000008ScNGAU"
+        },
+        "html": {
+            "title": null
+        }
+    },
+    {
+        "weight": 5,
+        "text": "Keynote",
+        "link": {
+            "target": "_top",
+            "href": "/0TOb00000008ScNGAU"
+        },
+        "html": {
+            "title": null
+        }
+    },
+    {
+        "weight": 5,
+        "text": "Leitmotif",
+        "link": {
+            "target": "_top",
+            "href": "/0TOb00000008ScNGAU"
+        },
+        "html": {
+            "title": null
+        }
+    },
+    {
+        "weight": 5,
+        "text": "Talking Point",
+        "link": {
+            "target": "_top",
+            "href": "/0TOb00000008ScNGAU"
+        },
+        "html": {
+            "title": null
+        }
+    }
+]
+				, {width: 800, height: 600});
+        });
+    </script>
+</apex:page>

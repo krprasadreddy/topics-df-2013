@@ -1,0 +1,21 @@
+<apex:page controller="ProfileTopicExtension" action="{!updateTopicCount}" showHeader="false" readOnly="true">
+
+<c:TopicCloud pageSize="100" topicList="{!topicCounts}" />
+
+<apex:chart height="450" width="450" data="{!topicCounts}" >
+	<apex:pieSeries dataField="weight" labelField="text" />
+	<apex:legend position="right"/>	
+</apex:chart>
+
+<apex:outputPanel >
+	<apex:chart height="350" width="550" data="{!lastFiveTopics}" >
+		<apex:axis type="Numeric" position="left" fields="userWeight,orgWeight" title="Topic Usage Count" minimum="0" steps="{!maxTopicCount+1}"/>
+		<apex:axis type="Category" position="bottom" fields="topic" title="Topics">
+			<apex:chartLabel rotate="90"/>
+		</apex:axis>
+		<apex:barSeries stacked="false" title="{!$User.FirstName & ' ' & $User.LastName}, Num. Talking About" axis="left" xField="topic" yField="userWeight,orgWeight" orientation="vertical" />
+		<apex:legend position="right"/>	
+	</apex:chart>
+</apex:outputPanel>
+
+</apex:page>
